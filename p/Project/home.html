@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img
+            <a class="navbar-brand" href="home.html"><img
                     src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_plus-055f80.svg"
                     alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -35,7 +35,7 @@
                     <li class="nav-item dropdown" style="margin-left: 25px;">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            <strong class="text2"><img
+                            <strong class="textnav"><img
                                     src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg"
                                     alt=""> Login</strong>
                         </a>
@@ -67,8 +67,8 @@
                         </ul>
                     </li>
                     <li class="nav-item cart-item" style="margin-left: 30px;">
-                        <a class="nav-link active" aria-current="page" href="#">
-                            <strong class="text1">
+                        <a class="nav-link active" aria-current="page" href="cart.html">
+                            <strong class="textnav">
                                 <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
                                     alt="">
                                 Cart
@@ -77,7 +77,9 @@
                     </li>
 
                     <li class="nav-item" style="margin-left: 30px;">
-                        <a class="nav-link active" aria-current="page" href="#"><strong class="text2"><img
+                        <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal"
+                            data-bs-target="#seller">
+                            <strong class="textnav"><img
                                     src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
                                     alt=""> Become a seller</strong></a>
                     </li>
@@ -86,10 +88,10 @@
 
             </div>
         </div>
-    </nav>
+    </nav><br>
 
     <!-- carousels -->
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" >
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/ceb25a1e133b7c45.jpg?q=20"
@@ -123,16 +125,81 @@
     <div class="container-fluid px-2">
         <div class="row">
             <div class="col-4">
-                <img class="img1" src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/6f23fc1a646a9c64.jpg?q=20"
+                <img class="advt" src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/6f23fc1a646a9c64.jpg?q=20"
                     alt="">
             </div>
             <div class="col-4">
-                <img class="img2" src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/fc58f4a259f34408.jpg?q=20"
+                <img class="advt" src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/fc58f4a259f34408.jpg?q=20"
                     alt="">
             </div>
             <div class="col-4">
-                <img class="img3" src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/805c2ff64ad6c279.jpg?q=20"
+                <img class="advt" src="https://rukminim2.flixcart.com/fk-p-flap/520/280/image/805c2ff64ad6c279.jpg?q=20"
                     alt="">
+            </div>
+        </div>
+    </div><br>
+    <center>
+        <h2>Monitors</h2>
+    </center><br>
+    <!--Cards-->
+
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/monitor/k/l/b/-original-imagsgh8zzgbu2tf.jpeg?q=70&crop=false"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SAMSUNG 24 inch Full HD</h5>
+                    <p class="card-text">Panel Type: IPS Panel<br>
+                        Screen Resolution Type: Full HD<br>
+                        Brightness: 250 nits<br>
+                        Response Time: 5 ms | Refresh Rate: 75 Hz<br>
+                        HDMI Ports - 1</p>
+                    <h5><strong> ₹</strong> 7,899&nbsp;<text
+                            style="text-decoration: line-through;font-size: 15px; ">₹14,499</text>&nbsp;<span
+                            class="badge text-bg-success">4.4 ★</span></h5>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a short card.</p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/monitor/i/n/s/e-24-full-hd-24-6230209-oneplus-original-imaghmp5w3gzcu6u.jpeg?q=70&crop=false"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">OnePlus 24 inch Full HD</h5>
+                    <p class="card-text">
+                        Model Name :E 24<br>
+                        Display :60.96 cm (24 inch) LED Display<br>
+                        Backlight :LED Backlit Backlight<br>
+                        Panel Type :IPS Panel<br>
+                        Resolution :1920 x 1080 pixels</p>
+                    <h5><strong> ₹</strong> 6,974 &nbsp;<text
+                            style="text-decoration: line-through;font-size: 15px;">₹19,999</text> &nbsp;<span
+                            class="badge text-bg-success">4.4 ★</span></h5>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
             </div>
         </div>
     </div>
@@ -142,6 +209,90 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal fade" id="seller" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" id="place1">
+                    <h4 class="modal-title" id="myModalLabel">Let's Become a seller!</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+
+                <div class="modal-body" id="place2">
+                    <form class="row g-3" autocomplete="off" name="hello-sheet">
+                        <div class="col-md-4">
+                            <label for="validationCustom01" class="form-label">Your name</label>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="Mark" required
+                                name="name">
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email" name="email">
+                            <div class="invalid-feedback">
+                                Please provide a valid Email Address
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="validationCustom03" required minlength="20"
+                                name="address">
+                            <div class="invalid-feedback">
+                                Address should be atleast 20 characters
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="validationCustom05" class="form-label">Zip</label>
+                            <input type="" class="form-control" id="validationCustom05" required pattern="[0-9]{6}"
+                                maxlength="6" name="pin">
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
+                                <label class="form-check-label" for="invalidCheck">
+                                    Agree to terms and conditions
+                                </label>
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <button id="btnp" class="btn btn-primary" type="submit" name="submit">Place Order</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="home.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

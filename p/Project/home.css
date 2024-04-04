@@ -1,35 +1,14 @@
-.text1:hover img {
-    transform: scale(1.5); /* Increase the scale value to zoom in more */
-    transition: transform 0.3s ease; /* Add a smooth transition effect */
-}
-.text2:hover img {
-    transform: scale(1.5); /* Increase the scale value to zoom in more */
-    transition: transform 0.3s ease; /* Add a smooth transition effect */
-}
-.text3:hover img {
-    transform: scale(1.5); /* Increase the scale value to zoom in more */
-    transition: transform 0.3s ease; /* Add a smooth transition effect */
-}
-
-
-
-.img1:hover {
-    transform: scale(1.1);
-    /* Increase the scale value to zoom in more */
+.textnav:hover img {
+    transform: scale(1.5);
     transition: transform 0.3s ease;
-    /* Add a smooth transition effect */
 }
 
-.img2:hover {
+
+.advt:hover {
     transform: scale(1.1);
-    /* Increase the scale value to zoom in more */
     transition: transform 0.3s ease;
-    /* Add a smooth transition effect */
 }
 
-.img3:hover {
-    transform: scale(1.1);
-    /* Increase the scale value to zoom in more */
-    transition: transform 0.3s ease;
-    /* Add a smooth transition effect */
-}
+
+
+
