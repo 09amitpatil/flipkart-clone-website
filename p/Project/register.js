@@ -8,9 +8,7 @@ document.getElementById("btnp").addEventListener("click", function(event) {
 
     if (a1 === "" || a2 === "" || a3 === "") {
         place1.style.color = "red";
-        place2.style.color = "red";
-        place1.innerHTML = "Error!!";
-        place2.innerHTML = "Fill all required details!!";
+        place1.innerHTML = "Fill all required details!!";
     } else if (a2 !== a3) {
         place1.style.color = "red";
         place1.innerHTML = "Error password dose not match!!";
