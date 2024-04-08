@@ -1,5 +1,5 @@
-document.getElementById("btnp").addEventListener("click", function(event) {
-    event.preventDefault(); 
+document.getElementById("btnp").addEventListener("click", function (event) {
+    event.preventDefault();
     var a1 = document.getElementById("Input1").value;
     var a2 = document.getElementById("Input2").value;
     var a3 = document.getElementById("Input3").value;
@@ -18,8 +18,8 @@ document.getElementById("btnp").addEventListener("click", function(event) {
         place1.innerHTML = "SUCCESS!!";
         place2.innerHTML = "You are registered you will now redirected to login page!!";
 
-        setTimeout(function() {
+        setTimeout(function () {
             window.location.href = "login.html";
-        }, 2000); 
+        }, 2000);
     }
 });

@@ -364,7 +364,7 @@
                     <a href="#" class="btn btn-primary">Add to cart</a>
                 </div>
             </div>
-        </div> 
+        </div>
     </div>
     <!--modal-->
 
@@ -385,7 +385,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
+                            <label class="form-label" for="exampleInputEmail1">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp" placeholder="Enter email" name="email">
                             <div class="invalid-feedback">
@@ -421,8 +421,8 @@
 
                         <div class="col-12">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
-                                <label class="form-check-label" aria-required="true" required for="invalidCheck">
+                                <input class="form-check-input" type="checkbox" required value="" id="invalidCheck">
+                                <label class="form-check-label" aria-required="true" for="invalidCheck">
                                     Agree to terms and conditions
                                 </label>
                                 <div class="invalid-feedback">
@@ -444,57 +444,60 @@
     <br><br><br>
 
     <footer>
-        <div class="container card links-footer">
+        <div class="container">
             <div class="row">
-                <div class="col-8" style="padding-top: 10px;">
-                    <span class="footer-links">ABOUT KFC |</span>
-                    <span class="footer-links">GIFT CARD |</span>
-                    <span class="footer-links">FEEDBACK |</span>
-                    <span class="footer-links">CONTACT US |</span>
-                    <span class="footer-links">BRAND T & C |</span>
-                    <span class="footer-links">OFFERS T & C |</span>
-                    <span class="footer-links">
-                        SITE MAP</span>
-                    <span class="footer-links">FIND A KFC</span>
+                <div class="col-md-3">
+                    <h5>About Us</h5>
+                    <ul>
+                        <li><a href="#">Company Information</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Our Brands</a></li>
+                    </ul>
                 </div>
-                <div class="col-1">
+                <div class="col-md-3">
+                    <h5>Customer Service</h5>
+                    <ul>
+                        <li><a href="#">Help & FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                    </ul>
                 </div>
-                <div class="col-3">
-                    <img height="37px" width="96px"
-                        src="https://miro.medium.com/v2/resize:fit:1400/0*HsI5uQ_8Ju9suain.png"
-                        style="padding-top: 10px;" />
-                    <img height="37px" width="96px"
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYQAAACCCAMAAABxTU9IAAAAe1BMVEUAAAD///9/f3/V1dX29vaioqLQ0NCRkZE2Njbu7u7n5+dISEiJiYnBwcHy8vLf39+7u7tkZGSqqqqzs7Pj4+NQUFBdXV10dHRCQkIeHh7Gxsabm5uNjY0LCwtMTEyurq4YGBh7e3soKChsbGw7OzsnJycvLy9XV1ccHBwKfIK7AAARc0lEQVR4nO1d6WKiMBAGQRAqh+AJVbFeff8n3CSTG1CwUuzK92O3IiRhvsxkMplEwywhtIJ0nyTT0YCnYpok+zSw7LLEDfVjlC+NAR1jOY5ukBDs+m7fu2AR1JDgnPpu2jvh5FSQEB76bta74RDqJMwnfbfp/XCJVBKiou8WvSO2jkzCfNt3e94UkSAhHGxRT/jyOAnHvtvyvlgyEuK+W/LOSIEEexgQesTWJiTkfbfjvZETEvpuxbsDkzCMCD0jRiTM+m7Eu+OISOi7DQNMI+q7CQPmRtp3EwakRtJ3EwaMjVXfTRhwMBZ9N2HAwhjWNHvHyfjquwkDvoyi7yYMKIwhhNo7BgpeAH+ehNNq9dHykePx5yuJi9Vx8+NCGJ5IwmbVtFmXwwrjkI++f1zrp2m2nW7aT4jeZ6b5etmKJK2vqbc7k3Jff5r6OjXNcctHwodJOC0WtNei122rgF1jbWGB2peGt0skmOb+Z1X/Kgmo/6/hr9cjYQ/i9IuG9yMSnOVsdpzu7R+z8KskBK9Lgs9MS9MHZjzBo8BW7IHo1YYPJrdJKIqKi81I2G7Kz8amSbUdSNhqt2x/PsY9iDkzLI2D4jMpywa9l83+XmVR5EBe8jZ14gL/cXWcKbkydrIJ8mwcZ2kk89CzRvCMRMIxsCIrFePlyok830q4kVyn6Pvku4KEU+JEVsYyog+Os9imPqpD6R5FnHlIhTMHD2NYJzax71mO8LRWjh/Os14WKkWGd2PHTyYB+yogzwVNj/VJSBGZX/J/Yppz8rVv+uhfF1VDU/uhCE7ChjWEOUsZaxe1Gyv45JVJcJkqg63JTXPmlAesDUuixmQFpr2j7aXJKl+s/h4WaNgLoA7dOAqlkJDQZuNUNM9xsG3DnelAucF6hv9fwzPII41N34lx9iDREEbCFonEtoKISwENVGGQ5z7TNFx+aGW+mekk4FeYZxa67BGtQSQEpp8FnmoqCydCt8wjHzcPkRCY8yDAxCxZ/V6cYybcFuJ7Ck7CzWk+PiokoA8W+m87p314DFJDBQfov2/W9VagaZ9MBWI6BjESEJcRdpFnNpC48W2fuMwOlSRy4JwzPKCSMKE1nNGdGb6QUxXYIl1ylIajSmlPC6iwC4s+hJrtfNP6GwviSRC7fporgkrCDkhYwX8GkRbu4xExQwfTD0jXjk0bZy0jEnxyFxJdiGukJJxt0wZjMgV2tqcTNOgANyzQ/TCZTDUSUm7QQnB+ctYU9IyvzGYDPhcK2CsssYFDZKD6oXikV5+NJfEUXIQijJo/pZCwgK6UcdVfQf9LyAun5v5ghgbmhHR8MUGemx7t2GMoknVa1BZZcle4QTx40UhAHwv4KwUDnzOLsvVukQBD4BZ6xRIUFy78cibXJ+cgaPGUrgn4g8UH0ALs0Yy8Zohsi2lOsORyWiE1e5FCgiuyOSM6pBszN4kzbMfxDbGw7yUSmHt2gNfIeV/2b5FAlyRtQsIIceEAdBvWObgH0qpehQQqxYiZEyaVs4fM0BrLa45ksqTjn+jQKgljOk4bRD741gl3nckNmfDefIWEAuwJxhGUkmtCOxIE/DbC+DnYxmir1VMKCRFIJxIRMdo1HVTqJ2Y3QaJJTI+I4wYJzClxCAlfSAP8OHFXLtcERoKtk8A+rh4nATUjvS4prq2k8WPYbR0jApmEFZWBZbJ8zA/alaamjfyTnIwaSLLEB6klYSQMoo3NFx5S4MYj3JALe1UeE+hfLri3j5Cw+nEQ7GEUhIK47WYriYQZ8+tdfo15K0j2ixDLE4kJOX4w8NeRgJwlUBU8xmDz4jDNSuCGK7cSrkaCw50KZMBwJ75JgogdKSRcft0IcRROPH4g8sNJOGN3EYZF7B+Sopbcu/HNCN4sM/mIUUcCNjekzK0PXj8bJNZMUX365Ic+T0BkE+8XP0LMaj0JMf9GJwFTmbIWdu+iFpdLxeLNdn0cfY6O66JJEYiE0LEsi8QBbKrg2C4Fn9NYeLsxm5hNxWBXSwImMXKnY5tKEvV8M5nNctOmNyDXx4z2eWZ6vjadwj0hmbo4HE+YricBK1EQY+mXSJjYuP7rDhUWNpHB45jkGQmZ+sGxkC5/r0QAyWkwX5DXE7Izu8rdXWa7MS1kMN2YXPS1JBhrT3USEuqprNkT9IK5dvQ5LZtx2jB0CxL0ecKZ1AGxI0YC6x87Vn/YaSbX0ZKEF+6ZR3mN1cNjvLs0LG2PwA9ceY3wI0MF2Q5PCbzMQzrJdcKQujYjO6QcOWGEvxyF7MJ27KFpq89rdz3bttPtKbTpDYcIXbCuRhYyn5S/WYRqDlPaH1zbpu5uFFrq+u9l74eEqjT0aNP90GL1+6h+e382usPOMjVY091uuZ/rl2kQ5xEUHx8/isifFoqPsClFUr7q1tS/duuab9rgcn1GKfUYlWVdD3vYGN0F8jYcmMP29C7g3he7pgvd6uU7YtWWg3YBvQENsK04O+8Ohv0/z0bamoPp/UIHtMKkNQctFngGNEPcloO+4on/M9py0Fc48X9Gq2kaRputiN8bgs4ar6I47DPf83wr/msGM7srdRVtVtm29Jlf2b04UgIv1p+aT7ZVhDYLDFP6zC8cuXQM9YZGr7fDoA4Xve330KZwdjBo98PIvqqpf+a4rbaz5TZ5F2v+VNfHpNd4eNKccre8Xq/LouN2PIhxSxLazJVFWLBjr5Yt6Jiek0+nY4ctwJjibGpQyhe1UJV6fANtJss+f6rbJcErrUUMxmyByuaOGVx4rZ0fHG2nai2cDnImqAlLo52ec0Ilrqgb7VyJes/7kQBFg/uVdfcGZI26XAXUzneovDQJbaN3zc1REYJoiCq0SOpuDTrd1Oz9xFbE/tIktB0Tmg/M4HetjAP5v8M5LLzCXL/sKJ0GSHjRtaikJObbaO6ighAMOh3UJtrXGQasy1/dcTp2VTt3OqKvj5DZcJnmaXJjZzooc2lf4zSyLCvC2S2orCV4RyNcq5pLenTz/T53tb1oBWkfUa5jno7lfK8Vam6Sfz4zCtB6ZbNpwWAO8ApcVtEJYWc0FrLL/ElbVjJoFpaMyMTJavoxaMKNCaH2BpLOLKUhMZaDYhDfR62/zpW3XogoT9h2b289rmZLNPVzplyMYJfUrV5Awsa4+HLZYsDhJCiOQ/X2DNqP6l0G7Q24zpy1NB9HZMxMaH10vGHje6A+8CwbW7QloWkAj/5+AxeCarOBhO1MK5x3LkrC1le/Lxl+jA8qqFoDoVXCSFiW3s3mAzclYce+IBd3pXXgZy3zNhU+R7OdvCAZ6LrQfxRTTEgIT6XCmS4ACQtH/76yCzDZJDW5X1oZlMlj1csxkwQk7JmqEBLWFfc/KRRQes97aBaNg5AFxIxm5faCJpB+HqJhccwDDbQvAgkggyB3c244qoJyYlyLF1U85K7rgkqN0V8uGJEJoy6brlafzNSH9HkgISL3zCMbk1BQrfTz5enjwMzkcyxSW/eo4cY5Mp7RaAWkcyjJt1yoHjXlUyoTaiuEXKnUFywfs2qFSDJatpPvqm6BCiWLRTufRTMr15HycnzhfU7GQNz0VGmPsYYGPefXKcqW8S4aJOhfFbqg28h2jJEgHMsTVQawWpwE4bLQzlplANaqsUZElMYHfbJGRyMpf4qyAqQwEsQ0nBojyS+JFFJ+hvYkNNjUnkoCZUTLCWMswFaIS1f5tRkJsstDdaGqupP2a5f4V0ZVHnQSQOSyad1CL4C9IJQEyREAR1geidelIh5H2/VNIs/idpkFeSFugOCjLWWVUxKUIEgqCZmSoEwNj2VeBPJyBlsgzys0EiYVZYE7asvfi34PI4KnGB/g5SmzttYr/US+o5u2EOQlzuIAeyT98iTIRDWoCyiaDOaUBNUT87VSFXxNy7/CK3GskQAvrfZiesQIMYBAgtRtrhV1g4I/xR5t9aY3w83TTjLxOlJzpX5N/R71KV+8FJAQqkzDAlT9ROW0CrTtFGJSq5EAXrPmYmSifuodie+gQaoWfvGgwM+hTQMb4lZM+wyunbhAJ13iADeQiRaSjQW7rs4aBl2Kvfky60MmE8Fr0EiAj5p/6QpmSiQAQclUhmvf7hRt0DpygeHdMkeg7PIgBvZeaC4IQduWDdvayMgsyUPgowEJBj58xBU8FEqFjITtvKr+lWC+REL9dErfnPUgSq5FA9yMXkGLbRnaS1WG94E70rPcEo0IF7sRCRhXS2unRgJoprYEcRSNLJFQ2k0m0KQ99/HA/oT6QI1xK42G+yuV4f0DuUisGJCgjXnfQEKzfW90SsuMRRMSYO5Aevbvk2D49TXU4OZoVL/5is+04J20jMqReHMgQRv8aaSh4Rw1UkSkqV5UVT90RtIJasxR5JTxnDHhEVW46RzXmzeedQEy0WKBIPlM+1NgoYi14Ut9yxVqA/Oy6olbY0KnK3NtR4WbIdyqaCMDGwqtqmLAAyHa4upCwBhVknC6LhaLa/nkXErZRK6QkyB5owKgwdXekRoC6AQtHaTbDgG0VzdYmXIVZKJpMkyWSEyETtZU0ULB+gIrXC2nc1BfqpAr5CSMq4qyBDMlEg7kQrdblNqt99/OagTLrc8jVCefjnPrijtI16UkKF11AwXrfhks4YWF3oxjRYWcBOh1ag4IDQMSS1siYV3ZAZ4LfQnrJm6vZMDs2Cu0yzQoQEMXlASl/4JNhNgNJUEO8LGgu26XadpRyUI6itg0EmhrFJITqf4SCVVD+TpAyJ6oHYvmHFSuMQpURgT4dSoU5vFJkeGxLEwWRZWKoTH3simkMzNN9aiLxsSsj8Q0Wig5GFQCoGhlEvLyu4OFfaaJEocO3sMdF6FSJAa3NuBgcreb38fEvlE+iQ5+peG58juzCKQcYN+ytaqCXgC9EDpMvQefh+jYegZ4U2USIFBkOgW/Qmm+LY2WaBpCusP8gdxUEdUopHFXmvuQFckzOziZCV2srEU4+2i7YEKtCt+zwnyXduwPl1lXbm8CvfFU8cJPQsOFhcLpglWZBNYkjyrvmpb4vMQXgmZ+6r0EA5BI1RIotHou3QV9yZ/7fImZGRs6WSPXQ3QDr75qx9yFx7BtP8qCSNwtBlKmLn40j+WG4sOdgyDiC8709goS+MKLH+f5vqv9L5vy4FxeKbm3wEwD41UxVtn7AQlcSgvcbOSkYYvS2mv1ml7dgCbZDkEUc4wvFacIWeyBKhK+K3rp84+gKuRa/GT2MbmcdlNHZuJuog1Ir3oiYYsiWOxIzUcOF2oxY+PQhAO+6q5BaayIpbDZyXcpMirmNlUkVCxCRl3kOfN9O4E0FdiMmIr493OObq1+SdnqPIAnSzkQaRKMBGMtqef8xu5dnk3J4WjTW651Yor4qew29KWVv2oSjKlSi9fR3O08drwoGOlJIx955jhxg7SvCTl6LayezR1D/KWNhSOiqN85iHkeyzFNTgKyYnCvl91JwJwFkkijcfkg0Y8Y9EW2qMeA6rkXK20m7xFWzM14LWH2spulm0Q48T1KKHu7uVy0ByUSjLojKss4L/M0TZPpoqirGkO7VkwWu0vdA1UoLrvl4n/4TdN72wVUEgZ0gnci4WV/9nEg4QXwXiS8KA3vRULRdxOq8V4kdHmq8A/wTiScjbY/fvBLuLetuDLv6I9iYrzo9mkXTarSuP53bWcx/r7Twxh+DTvj/3iPP42V8X+Y1T+NsdHD73UOUJEajX9FeUBXmBu//nOdA3SYRsO93wM6wwyRMAwKPSPF52713Yh3Bzn87M+cDvp/IickPGfj/4AHYcMxgMOo0CPID6XjOFjX5/MOqAXJXiMkePWBsgGd4uJxEsz5MCz0ArpdmiaqR7/1OxIDJJzZBlKW4veiR3X/z9ixDE5+mpE9/CzXL2PKE6mlI6WsX/lRlQGAtXQEgHKuVzb4qr+EmZJErx2uFu6H5c7OsUq13/epOOHOtoJ0nyRJPhrwRORIpPs0KB8/Zpr/APe/1nvsKnzNAAAAAElFTkSuQmCC"
-                        style="padding-top: 10px;" />
+                <div class="col-md-3">
+                    <h5>Shop With Us</h5>
+                    <ul>
+                        <li><a href="#">Today's Deals</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Track Your Order</a></li>
+                        <li><a href="#">Sell on Flipkart</a></li>
+                    </ul>
                 </div>
-            </div>
-            <hr class="horizontal-line">
-            <div class="row">
-                <div class="col-6">
-                    <img height="30px" width="40px"
-                        src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg"
-                        style="padding-left: 10px;">
-                    <img height="30px" width="60px" src="https://www.facebook.com/images/fb_icon_325x325.png"
-                        style="padding-left: 30px;">
-                    <img height="30px" width="75px"
-                        src="https://cdn.pixabay.com/photo/2021/05/22/11/38/yt-6273367_960_720.png"
-                        style="padding-left: 30px;">
+                <div class="col-md-3">
+                    <h5>Follow us</h5>
+                    <ul>
+                    <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                    </svg></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                      </svg></li>
+                      <li><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                      </svg></li>
+
+                    <img class="paymentad"
+                        src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg"
+                        alt="">
+                    </ul>
                 </div>
-                <div class="col-6">
-                    <small style="float: right;">© Copyright 2021 KFC. All Rights Reserved.</small>
-                </div>
-            </div>
-            <br>
-            <div class="text-center">
-                <small>
-                    Food shown are for illustration purpose only. Actual product may differ from the images shown in
-                    this website.
-                    Our menu prices are now inclusive of GST.* The KFC name, logos, and related marks are trademarks of
-                    KFC, Inc.
-                    All chicken products contain Monosodium Glutamate. Not recommended for infants below 12 years old.
             </div>
         </div>
     </footer>
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="home.js"></script>
