@@ -123,7 +123,8 @@
                         <h5><strong> ₹</strong> 12,229&nbsp;</h5>
                         <h6 style="color: green;">27% off &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 offers applied</h6><br>
 
-                        <a href="#"><button class="btn btn-warning">Place order</button></a>
+                        <a href="#"><button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Place order</button></a>
                     </div>
                     <div class="col-md-4">Delivery by Thu Apr 11 | <br> ₹30 <span style="color: green;"> 75% off</span>
                     </div>
@@ -152,7 +153,27 @@
 
 
 
-
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Order placed successfully...</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <center><img
+                            src="https://smart.smartshops.com.ng/wp-content/uploads/2023/11/02-lottie-tick-01-instant-2.gif"
+                            alt="">
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <h4>Thank you.</h4>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

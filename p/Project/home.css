@@ -20,6 +20,7 @@
 .card-img-top{
     height: 320px;
     width: 370px;
+    padding: 10px;
 }
 
 
@@ -67,3 +68,24 @@ footer ul li a:hover {
     color: #007bff;
 }
 
+.social-media-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media-icons li {
+    display: inline-block;
+    margin-right: 10
+}
+.container1{
+    position: relative;
+
+}
+
+.rights{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 7px;
+}
