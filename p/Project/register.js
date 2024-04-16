@@ -6,13 +6,18 @@ document.getElementById("btnp").addEventListener("click", function (event) {
     var place1 = document.getElementById("place1");
     var place2 = document.getElementById("place2");
 
-    if (a1 === "" || a2 === "" || a3 === "") {
+    if (a1 === "" || a2 === "" || a3 === "") 
+    {
         place1.style.color = "red";
         place1.innerHTML = "Fill all required details!!";
-    } else if (a2 !== a3) {
+    } 
+    else if (a2 !== a3) 
+    {
         place1.style.color = "red";
         place1.innerHTML = "Error password dose not match!!";
-    } else {
+    } 
+    else 
+    {
         place1.style.color = "green";
         place2.style.color = "green";
         place1.innerHTML = "SUCCESS!!";
